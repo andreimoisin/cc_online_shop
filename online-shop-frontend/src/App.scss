@@ -1,0 +1,22 @@
+/* Reset de bază */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #1a1a1a;
+  }
+  
+  /* Asigurăm spațiu sub navbar */
+  main {
+    padding-top: 80px; // înălțimea navbarului + spațiu
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* max-width: 1200px;
+    margin: 0 auto; */
+  }
+  

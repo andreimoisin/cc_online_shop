@@ -1,0 +1,10 @@
+# Node modules
+node_modules/
+online-shop-frontend/node_modules/
+online-store-backend/node_modules/
+
+# Build files
+online-store-frontend/dist/
+
+# Env files
+*.env

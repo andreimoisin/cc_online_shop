@@ -1,0 +1,102 @@
+.admin-orders {
+    padding: 2rem;
+  
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    select {
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-left: 0.5rem;
+        font-size: 0.95rem;
+    }      
+  
+    .orders-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    .order-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  
+      .order-header {
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+  
+      .order-body p {
+        margin: 0.4rem 0;
+      }
+    }
+
+    .status-section {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 0.5rem 0;
+      
+        select {
+          padding: 0.3rem 0.6rem;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          font-size: 0.95rem;
+        }
+      }
+      
+      .status-badge {
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: white;
+      }
+      
+      .status-badge.pending {
+        background-color: #f59e0b; // portocaliu
+      }
+      
+      .status-badge.processing {
+        background-color: #3b82f6; // albastru
+      }
+      
+      .status-badge.shipped {
+        background-color: #8b5cf6; // indigo
+      }
+      
+      .status-badge.delivered {
+        background-color: #10b981; // verde
+      }
+      
+      .toast {
+        position: fixed;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #10b981;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 500;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        animation: fadeInOut 3s ease-in-out;
+      }
+      
+      @keyframes fadeInOut {
+        0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+        10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+        90% { opacity: 1; }
+        100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+      }      
+  }

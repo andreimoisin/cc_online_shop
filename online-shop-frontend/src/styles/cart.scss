@@ -1,0 +1,141 @@
+.cart-page {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .cart-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+  
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+  
+    .info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+  
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        margin: 0.2rem 0;
+      }
+  
+      .price {
+        font-weight: bold;
+        color: #10b981;
+      }
+    }
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  
+    button {
+      padding: 0.3rem 0.8rem;
+      background-color: #facc15;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+  
+      &:hover {
+        background-color: #eab308;
+      }
+    }
+  
+    span {
+      font-size: 1.1rem;
+      min-width: 20px;
+      text-align: center;
+    }
+  }
+  
+  .remove-btn {
+    margin-top: 0.5rem;
+    padding: 0.4rem 1rem;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  
+    &:hover {
+      background-color: #dc2626;
+    }
+  }
+  
+  .cart-total {
+    margin-top: 2rem;
+    text-align: right;
+    max-width: 800px;
+    margin-inline: auto;
+  
+    h3 {
+      margin-bottom: 1rem;
+    }
+  
+    .checkout-btn {
+      background-color: #1e1e1e;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #333;
+      }
+    }
+  
+    .clear-btn {
+      margin-left: 1rem;
+      background-color: #f87171;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #ef4444;
+      }
+    }
+  }
+  

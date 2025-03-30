@@ -1,0 +1,94 @@
+.login-page {
+    position: relative;
+    min-height: calc(100vh - 80px); // scade înălțimea navbarului
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+    padding: 2rem;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 3rem 4rem;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  
+    h2 {
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      color: #1e1e1e;
+    }
+  
+    label {
+      font-weight: 500;
+      margin-top: 1.2rem;
+      display: block;
+      font-size: 0.95rem;
+    }
+  
+    input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      margin-top: 0.4rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+  
+    .error-msg,
+    .success-msg {
+      padding: 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+  
+    .error-msg {
+      background-color: #ffe0e0;
+      color: #d10000;
+    }
+  
+    .success-msg {
+      background-color: #d9fcd9;
+      color: #106910;
+    }
+  
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 0.9rem;
+      background-color: #1e1e1e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+  
+      &:hover {
+        background-color: #333;
+      }
+    }
+  
+    .redirect {
+      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+  
+      a {
+        color: #0077ff;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

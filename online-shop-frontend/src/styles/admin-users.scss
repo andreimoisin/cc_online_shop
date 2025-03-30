@@ -1,0 +1,49 @@
+.admin-users {
+    padding: 2rem;
+  
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    table {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+      th, td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+      }
+  
+      th {
+        background-color: #f3f4f6;
+      }
+  
+      select {
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+      }
+  
+      .delete-btn {
+        background-color: #ef4444;
+        border: none;
+        padding: 0.4rem 0.8rem;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #dc2626;
+        }
+      }
+    }
+  }
+  
