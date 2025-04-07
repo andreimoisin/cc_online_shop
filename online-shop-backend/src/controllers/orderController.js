@@ -1,6 +1,7 @@
 const Order = require('../models/Order');
 const Cart = require('../models/Cart');
 const Product = require('../models/Product');
+const EmailService = require('../services/ServiceEmail');
 
 // Plasează o comandă
 const placeOrder = async (req, res) => {
@@ -30,6 +31,20 @@ const placeOrder = async (req, res) => {
         // Golește coșul după plasarea comenzii
         cart.products = [];
         await cart.save();
+
+  // Trimite email de confirmare către utilizator
+  try {
+    console.log("Utilizator extras din token:", req.user);
+    await EmailService.sendEmail(
+        req.user.email, // Adresa destinatarului; asigură-te că req.user.email este disponibil
+        'Confirmare Comandă',
+        `Comanda cu ID-ul ${order._id} a fost plasată cu succes. Mulțumim pentru achiziție!`,
+        `<p>Comanda cu ID-ul <strong>${order._id}</strong> a fost plasată cu succes. Mulțumim pentru achiziție!</p>`
+    );
+} catch (emailError) {
+    console.error('Eroare la trimiterea emailului de confirmare:', emailError);
+    // Poți alege să continui, chiar dacă trimiterea emailului eșuează
+}
 
         res.status(201).json(order);
     } catch (error) {
